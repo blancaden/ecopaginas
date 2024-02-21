@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+header {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo-div {
+    width: 20%;
+    height: 5rem;
+    border: 2px solid red;
+}
+
+.header-navbar {
+    width: 80%;
+    height: 5rem;
+    border: 2px solid blue;
+}
