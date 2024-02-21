@@ -1,19 +1,27 @@
 import React from 'react'
+import Logo from '../assets/logo.png'
+import IconPhone from '../assets/Phone.png'
 import '../App.css'
 
 export const Navbar = () => {
   return (
     <header>
     <div className="logo-div">
-        <img src="" alt="logo" />
+        <img src={Logo} alt="logo" className='Logo'/>
     </div>
     <div className="header-navbar">
-        <div>
-          <p>texblanlbalba</p>
+        <nav>
+        
+          <a className='nav-link'>Top Libros</a>
+          <a className='nav-link'>Promociones</a>
+          <a className='nav-link'>Novedades</a>
           
-        </div>
+          <input type="search" placeholder="Busca tu libro aquí" className='input-search'/>
+        </nav>
+        
         <div>
-
+          <img src={IconPhone} alt="" className='Phone' />
+          <p></p>
         </div>
     </div>
 </header>

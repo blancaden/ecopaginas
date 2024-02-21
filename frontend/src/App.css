@@ -6,17 +6,38 @@
 header {
     display: flex;
     flex-direction: row;
+    background-color: aqua;
+    width: 100%;
 
 }
 
 .logo-div {
-    width: 20%;
-    height: 5rem;
     border: 2px solid red;
 }
 
+.Logo {
+    width: 6.5rem;
+    height: 5rem;
+}
+
+.Phone {
+
+}
+
+.nav-link{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.input-search{
+    margin-left: 25px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
 .header-navbar {
-    width: 80%;
+    width: 100%;
     height: 5rem;
     border: 2px solid blue;
 }
