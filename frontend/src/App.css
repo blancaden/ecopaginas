@@ -2,14 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    box-sizing: border-box;
+}
 
 header {
     display: flex;
     flex-direction: row;
     background-color: aqua;
     width: 100%;
-
 }
+
+.header-navbar nav{
+    display: flex;
+    align-items: center;
+}
+
+.Phone {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+p{ display: inline-block;}
 
 .logo-div {
     border: 2px solid red;
@@ -20,9 +34,6 @@ header {
     height: 5rem;
 }
 
-.Phone {
-
-}
 
 .nav-link{
     margin-left: 10px;

@@ -11,18 +11,18 @@ export const Navbar = () => {
     </div>
     <div className="header-navbar">
         <nav>
-        
           <a className='nav-link'>Top Libros</a>
           <a className='nav-link'>Promociones</a>
           <a className='nav-link'>Novedades</a>
-          
           <input type="search" placeholder="Busca tu libro aquí" className='input-search'/>
+          <div>
+          <img src={IconPhone} alt="" className='Phone' />
+          <p>666+666</p>
+          
+        </div>
         </nav>
         
-        <div>
-          <img src={IconPhone} alt="" className='Phone' />
-          <p></p>
-        </div>
+        
     </div>
 </header>
   )
