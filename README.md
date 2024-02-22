@@ -21,7 +21,7 @@ Bienvenidos a "EcoPáginas", una plataforma innovadora y sostenible diseñada pa
 
 
 
-> EcoPáginas" no es solo una plataforma de intercambio de libros; es un paso hacia un futuro más sostenible, donde la tecnología y la pasión por la lectura se unen para crear un impacto positivo en el mundo.
+> EcoPáginas no es solo una plataforma de intercambio de libros; es un paso hacia un futuro más sostenible, donde la tecnología y la pasión por la lectura se unen para crear un impacto positivo en el mundo.
 >
 
 
