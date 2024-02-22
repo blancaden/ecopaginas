@@ -15,12 +15,10 @@ function App() {
     <> <div>
       <Navbar />
      <Routes>
-    
         <Route path="/" component={HomePage} /> 
         <Route path="/Promotions" component={Promotions} />
         {/* <Route path="/projects" element={<HomePage />} />  */}
            {/* <Route path="*" element={ <ErrorPage /> }  /> */}
-      
       </Routes>
      <Layout />
      <Footer />
