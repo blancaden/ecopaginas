@@ -1,18 +1,13 @@
-//esta version de mysql es mas estable, importa una interfaz para interactuar con base de datos
 import mysql from 'mysql2'   
-
-//importamos la libreria de dotenv, con esto podemos usar los datos del servidor mysql en el pool, para saber mas, chequea el archivo .env
 import dotenv from 'dotenv'
 dotenv.config()
 
-//creacion de objeto pool de conecciones, este metodo es de mysql2, Un pool de conexiones es una forma eficiente de manejar múltiples conexiones a la base de datos y optimizar su reutilización
 const pool = mysql.createPool({
-    host:     process.env.MYSQL_HOST,           //esto es mejor que localhost
-    user:     process.env.MYSQL_USER,           //mi usuario en mysql
-    password: process.env.MYSQL_PASSWORD,   //mi clave, que esta vacia
-    database: process.env.MYSQL_DATABASE    //la base de datos que quiero usar
-}).promise();                    // indica que se desea utilizar el soporte de promesas de mysql2, permitiendo el uso de async/await para manejar las consultas de manera más concisa.
-
+    host:     process.env.MYSQL_HOST,           
+    user:     process.env.MYSQL_USER,           
+    password: process.env.MYSQL_PASSWORD,   
+    database: process.env.MYSQL_DATABASE    
+}).promise();                    
 
 //
 //--------------------------------
@@ -47,7 +42,7 @@ export async function createLibro(nombre_libro, image, categoria_libro, descripc
 export async function modifyLibro(nombre_libro, image, categoria_libro, descripcion_libro, valor, stock, id) {
     const [result] = await pool.query(`UPDATE Libros SET nombre_libro = ?, image = ?, categoria_libro = ?, descripcion_libro = ?, valor = ?, stock = ? WHERE id_libro = ?`, [nombre_libro, image, categoria_libro, descripcion_libro, valor, stock, id]);
     id = result.insertId
-    console.log("mODIFIED Libros")
+    console.log("Modified Libros")
     return getLibros(id)
 }
 
