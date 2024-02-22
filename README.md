@@ -53,7 +53,8 @@ El stack tecnológico y herramientas utilizadas:
 **Presentación del proyecto** ([Link aqui](https://www.canva.com/design/DAF9gUyi5bQ/bWL_mDEWn6zMNKlHPTUucQ/edit?utm_content=DAF9gUyi5bQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton))
 
 
-![Static Badge](https://img.shields.io/badge/Version%20Pre-Alfa-1.0.0-green)
+![Static Badge](https://img.shields.io/badge/PreAlpha-v1.00-green?style=flat)
+
 
 
 
