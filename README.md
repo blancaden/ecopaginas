@@ -1,9 +1,9 @@
-#🌱 ecoPáginas | Sembrando conocimiento, cosechando el futuro
+# 🌱 ecoPáginas | Sembrando conocimiento, cosechando el futuro
 
 ![](https://imgur.com/mSEZwuD.jpg)
 
 
-# 📚 Caracteristicas generales
+## 📚 Caracteristicas generales
 
 Bienvenidos a "EcoPáginas", una plataforma innovadora y sostenible diseñada para transformar la manera en que compartimos y accedemos a libros, utilizando tecnologías web de vanguardia como React y Express, junto con bases de datos MySQL.
 
