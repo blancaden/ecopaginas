@@ -48,7 +48,7 @@ export const updateLibro = async(req,res)=>{
             where: { id: req.param.id}
         })
         res.json({
-            "message": "¡Registro actualizado correctamente"
+            "message": "¡Registro actualizadoas correctamente"
         })
     } catch(error) {
         res.json({message: error.message})
