@@ -15,9 +15,9 @@ const pool = mysql.createPool({
 
 
 //
-//--------------------------------
-//MECANICA PARA LA TABLA USUARIOS
-//--------------------------------
+//
+//MECANICA PARA LIBROS
+//
 //
 
 export async function getLibros() {

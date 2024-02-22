@@ -7,7 +7,7 @@ app.use(express.json())
 
 //
 //
-//MECANICA PARA USUARIOS
+//MECANICA PARA LIBROS
 //
 //
 //aqui le digo que llame a la tabla de users, "get" de todos los items
