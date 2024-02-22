@@ -10,7 +10,8 @@ const pool = mysql.createPool({
     host:     process.env.MYSQL_HOST,           //esto es mejor que localhost
     user:     process.env.MYSQL_USER,           //mi usuario en mysql
     password: process.env.MYSQL_PASSWORD,   //mi clave, que esta vacia
-    database: process.env.MYSQL_DATABASE    //la base de datos que quiero usar
+    database: process.env.MYSQL_DATABASE,    //la base de datos que quiero usar
+    port: process.env.MYSQL_PORT
 }).promise();                    // indica que se desea utilizar el soporte de promesas de mysql2, permitiendo el uso de async/await para manejar las consultas de manera más concisa.
 
 
@@ -22,32 +23,32 @@ const pool = mysql.createPool({
 
 export async function getLibros() {
     
-    const [rows] = await pool.query('SELECT * FROM Libros') 
+    const [rows] = await pool.query('SELECT * FROM libros') 
     return rows
 }
 //funcion para OBTENER un usuario
 export async function getLibro(id) {
-    const [rows] = await pool.query('SELECT * FROM Libros WHERE id_libro = ?', [id]) 
+    const [rows] = await pool.query('SELECT * FROM libros WHERE id_libro = ?', [id]) 
     return rows[0]
 }
 //funcion para ELIMINAR Libros
 export async function deleteLibro(id) {
-    const [rows] = await pool.query('DELETE FROM Libros WHERE id_libro = ?', [id])
+    const [rows] = await pool.query('DELETE FROM libros WHERE id_libro = ?', [id])
     console.log("Deleted Libro")
     return getLibros() 
 }
 //funcion para CREAR Libros
 export async function createLibro(nombre_libro, image, categoria_libro, descripcion_libro, valor, stock) {
-    const [result] = await pool.query('INSERT INTO Libros (nombre_libro, image, categoria_libro, descripcion_libro, valor, stock) VALUES (?, ?, ?, ?, ?, ?)', [nombre_libro, image, categoria_libro, descripcion_libro, valor, stock])
+    const [result] = await pool.query('INSERT INTO libros (nombre_libro, image, categoria_libro, descripcion_libro, valor, stock) VALUES (?, ?, ?, ?, ?, ?)', [nombre_libro, image, categoria_libro, descripcion_libro, valor, stock])
     const id = result.insertId
     console.log("Added Libro")
     return getLibros(id)
 }
 //funcion para actualizar usuarios
 export async function modifyLibro(nombre_libro, image, categoria_libro, descripcion_libro, valor, stock, id) {
-    const [result] = await pool.query(`UPDATE Libros SET nombre_libro = ?, image = ?, categoria_libro = ?, descripcion_libro = ?, valor = ?, stock = ? WHERE id_libro = ?`, [nombre_libro, image, categoria_libro, descripcion_libro, valor, stock, id]);
+    const [result] = await pool.query(`UPDATE libros SET nombre_libro = ?, image = ?, categoria_libro = ?, descripcion_libro = ?, valor = ?, stock = ? WHERE id_libro = ?`, [nombre_libro, image, categoria_libro, descripcion_libro, valor, stock, id]);
     id = result.insertId
-    console.log("mODIFIED Libros")
+    console.log("mODIFIED libros")
     return getLibros(id)
 }
 
