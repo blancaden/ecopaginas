@@ -48,4 +48,4 @@ El stack tecnológico y herramientas utilizadas:
 
 **Diseño y prototipo Figma:** ([Link aqui](https://www.figma.com/file/botpadAtRIfArpOllhC5eh/ecopaginas-compartido?type=design&node-id=0-1&mode=design&t=OXPnwgBr0Di6nLXe-0)) 
 
-**Diagrama de flujo del sitio** ([Link aqui](https://lucid.app/lucidchart/06fe127f-676d-4a7e-bddb-904cfbf60171/edit?viewport_loc=-1463%2C-2120%2C3499%2C1972%2C0_0&invitationId=inv_9a86fd8c-acdc-4d89-926f-6cc835858670)
+**Diagrama de flujo del sitio** ([Link aqui](https://lucid.app/lucidchart/06fe127f-676d-4a7e-bddb-904cfbf60171/edit?viewport_loc=-1463%2C-2120%2C3499%2C1972%2C0_0&invitationId=inv_9a86fd8c-acdc-4d89-926f-6cc835858670))
