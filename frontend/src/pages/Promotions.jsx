@@ -1,5 +1,5 @@
 export const Promotions = ()=>{
-    return <div>promotions funciona</div>
+    return <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas molestiae, ipsa optio, error, magnam molestias voluptatum aliquam aspernatur architecto excepturi quaerat mollitia doloribus blanditiis. Quisquam sunt nam pariatur nihil debitis temporibus reiciendis possimus, ipsum optio magnam corrupti soluta animi, doloribus ipsa. Odit nihil soluta eum ullam et eveniet, officia, ad error ex laudantium sapiente quas ab earum iste modi! Vel suscipit nesciunt inventore commodi dolor? Consectetur magni reiciendis quod itaque, placeat est accusantium dolor sint vitae cumque eos explicabo perferendis ut nobis, magnam laboriosam iusto aperiam facere necessitatibus doloremque at id! Reprehenderit suscipit quia ullam quam, repellat blanditiis fugiat?</div>
 }
 
 export default Promotions
